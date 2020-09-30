@@ -17,8 +17,13 @@ namespace ReactAspx.Models
 		// [NotMapped]
 		// public int Quantity { get; set; }
 
-		public bool InStock	{ get; set; }	
-		
+		public bool InStock	{ get; set; }
+
+		[NotMapped]
+		public DateTime HireFrom { get; set; }
+		[NotMapped]
+		public DateTime HireTill { get; set; }
+
 		[NotMapped]
 		public string Comment { get; set; }
 	}
